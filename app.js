@@ -10,7 +10,7 @@ async function checkFact() {
 
   try {
     const res = await fetch(
-      `http://localhost:5000/api/fact-check?query=${encodeURIComponent(query)}`
+      `https://fact-checker-googleapi.onrender.com/api/fact-check?query=${encodeURIComponent(query)}`
     );
     const data = await res.json();
 
